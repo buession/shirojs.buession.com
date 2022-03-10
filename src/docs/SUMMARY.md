@@ -18,6 +18,6 @@
 * [简介](../manual/index.md)
 * [概览](../manual/overview.md)
 * [参考指南](../manual/api.md)
-  * [1.1.x](../manual/api/1.1.md)
+  * [1.1.x](../manual/api/1.1/index.md)
 
 ### 升级
