@@ -3,7 +3,7 @@
 ### 介绍
 
   * [框架介绍](intro.md)
-  * [开源协议](license.md)
+  * [开源协议](../license.md)
 
 ### 快速开始
 
@@ -15,8 +15,8 @@
 
 ### API 手册
 
-* [简介](installation.md)
-* [概览](installation.md)
-* [参考指南](guide.md)
+* [简介](../manual/index.md)
+* [概览](../manual/overview.md)
+* [参考指南](../manual/api.md)
 
 ### 升级

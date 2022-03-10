@@ -4,3 +4,7 @@
 Buession ShiroJs 旨在提供便捷的、统一的、可靠的前端权限验证功能。在业务开发中省去的那些“脏活累活”，专注于业务核心的开发。
 
 Buession ShiroJs 的核心思想参考 [Apache Shiro](http://shiro.apache.org/)，Buession ShiroJs 的 API 核心方法完全和 [Apache Shiro Tags](https://github.com/apache/shiro/blob/main/web/src/main/resources/META-INF/shiro.tld) 几乎保持一致。
+
+
+### 如何贡献
+如果您希望参与贡献，欢迎 [Pull Request](https://github.com/buession/buession-shirojs/pulls)，或给我们报告 [Bug](https://github.com/buession/buession-shirojs/issues/new)。
