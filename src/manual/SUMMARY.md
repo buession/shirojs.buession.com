@@ -2,16 +2,16 @@
 
 ### 介绍
 
-  * [框架介绍](/docs/intro.html)
-  * [开源协议](/license.html)
+  * [框架介绍](https://shirojs.buession.com/docs/intro.html)
+  * [开源协议](https://shirojs.buession.com/license.html)
 
 ### 快速开始
 
-* [快速入门](/docs/quickstart.html)
-* [版本说明](/docs/version.html)
-* [安装](/docs/installation.html)
-  * [环境要求](/docs/requirement.html)
-  * [安装及使用](/docs/installation.html)
+* [快速入门](https://shirojs.buession.com/docs/quickstart.html)
+* [版本说明](https://shirojs.buession.com/docs/version.html)
+* [安装](https://shirojs.buession.com/docs/installation.html)
+  * [环境要求](https://shirojs.buession.com/docs/requirement.html)
+  * [安装及使用](https://shirojs.buession.com/docs/installation.html)
 
 ### API 手册
 
