@@ -9,6 +9,6 @@
 
 ### 下一步可做什么？
 您对 Buession ShiroJs 大致了解后，您接下来可以做以下事情：
-* [了解兼容性](/docs/requirement.md#支持环境)：了解 Buession ShiroJS 对浏览器的兼容性
-* [安装](/docs/installation.md)：安装/引用 Buession ShiroJs
+* [了解兼容性](/docs/requirement.html#支持环境)：了解 Buession ShiroJS 对浏览器的兼容性
+* [安装](/docs/installation.html)：安装/引用 Buession ShiroJs
 * [使用](/manual/)：开始使用 ShiroJs 功能
