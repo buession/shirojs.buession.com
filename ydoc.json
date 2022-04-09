@@ -4,5 +4,10 @@
   "description": "A security framework for JavaScript or TypeScript. ",
   "author": "buession",
   "theme": "demo",
-  "root": "src"
+  "root": "src",
+  "pluginsConfig": {
+    "import-asset": {
+      "js": ["stat.js"]
+    }
+  }
 }
