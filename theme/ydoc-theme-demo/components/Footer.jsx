@@ -28,13 +28,4 @@
 				<p>Build by <a className="href" href="https://ydoc.ymfe.org/">ydoc</a></p>
 			</div>
 	</div>
-	{(
-		const _hmt = _hmt || [];
-		(function() {
-		  const hm = document.createElement('script');
-		  hm.src = 'https://hm.baidu.com/hm.js?ce98b773508a8563e2eef8c8573da346';
-		  const s = document.getElementsByTagName('script')[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	)}
 </footer>
