@@ -7,7 +7,7 @@
   "root": "src",
   "pluginsConfig": {
     "import-asset": {
-      "js": ["stat.js"]
+      "js": ["/js/stat.js"]
     }
   }
 }
