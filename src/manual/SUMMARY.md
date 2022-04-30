@@ -6,11 +6,11 @@
 
 ### 快速开始
 
-* [快速入门](/docs/quickstart.html)
-* [版本说明](/docs/version.html)
-* [安装](/docs/installation.html)
-  * [环境要求](/docs/requirement.html)
-  * [安装及使用](/docs/installation.html)
+* [快速入门](../docs/quickstart.html)
+* [版本说明](../docs/version.html)
+* [安装](../docs/installation.html)
+  * [环境要求](../docs/requirement.html)
+  * [安装及使用](../docs/installation.html)
 
 ### API 手册
 
