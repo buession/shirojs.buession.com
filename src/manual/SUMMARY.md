@@ -3,7 +3,6 @@
 ### 介绍
 
   * [框架介绍](../docs/intro.html)
-  * [开源协议](../license.html)
 
 ### 快速开始
 
