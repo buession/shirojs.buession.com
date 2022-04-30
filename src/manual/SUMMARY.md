@@ -2,8 +2,8 @@
 
 ### 介绍
 
-  * [框架介绍](https://shirojs.buession.com/docs/intro.html)
-  * [开源协议](https://shirojs.buession.com/license.html)
+  * [框架介绍](../docs/intro.html)
+  * [开源协议](../license.html)
 
 ### 快速开始
 
