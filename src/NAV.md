@@ -2,8 +2,7 @@
 ![logo](ydoc/images/dog@1x.png)
 
 * [主页](https://shirojs.buession.com/)
-* [快速上手](/docs/quickstart.md)
-* [文档](/docs/installation.md)
+* [文档](/docs/quickstart.md)
 * [参考手册](/manual/index.md)
 * [技术支持](/support.html)
 ## 生态
