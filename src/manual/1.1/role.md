@@ -1,9 +1,11 @@
 ### **hasRole(roleName: string)**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具备某角色
 
 * 参数：roleName 角色名称
 
-* 返回值：boolean 用户是否具备某角色
+* 返回值：`boolean` 用户是否具备某角色
 
 示例：
 
@@ -19,7 +21,7 @@
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasRole('admin') === true">用户具有 admin 角色</div>
@@ -38,11 +40,13 @@ export default defineComponent({
 
 
 ### **lacksRole(roleName: string)**
+* 类型：`Function`
+
 * 功能描述：验证用户是否不具备某角色，与 hasRole 逻辑相反
 
 * 参数：roleName 角色名称
 
-* 返回值：boolean 用户是否不具备某角色
+* 返回值：`boolean` 用户是否不具备某角色
 
 示例：
 
@@ -58,7 +62,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.lacksRole('admin') === true">用户不具有 admin 角色</div>
@@ -77,11 +81,13 @@ export default defineComponent({
 
 
 ### **hasAnyRole(roleNames: string[])**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具有以下任意一个角色
 
 * 参数：roleNames 角色列表
 
-* 返回值：boolean 用户是否具有以下任意一个角色
+* 返回值：`boolean` 用户是否具有以下任意一个角色
 
 示例：
 
@@ -97,7 +103,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasAnyRole('admin', 'seller') === true">用户具有 admin 或 seller 角色</div>
@@ -116,11 +122,13 @@ export default defineComponent({
 
 
 ### **hasRolesAll(roleNames: string[])**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具有以下所有角色
 
 * 参数：roleNames 角色列表
 
-* 返回值：boolean 用户是否具有以下所有角色
+* 返回值：`boolean` 用户是否具有以下所有角色
 
 示例：
 
@@ -136,7 +144,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasRolesAll('admin', 'seller') === true">用户具有 admin 和 seller 角色</div>

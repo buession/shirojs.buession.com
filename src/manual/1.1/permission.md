@@ -1,9 +1,11 @@
 ### **hasPermission(permissionName: string)**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具备某权限
 
 * 参数：permissionName 权限名称
 
-* 返回值：boolean 用户是否具备某权限
+* 返回值：`boolean` 用户是否具备某权限
 
 示例：
 
@@ -19,7 +21,7 @@
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasPermission('user:add') === true">用户具有 user:add 权限</div>
@@ -38,11 +40,13 @@ export default defineComponent({
 
 
 ### **lacksPermission(permissionName: string)**
+* 类型：`Function`
+
 * 功能描述：验证用户是否不具备某权限，与 hasPermission 逻辑相反
 
 * 参数：permissionName 权限名称
 
-* 返回值：boolean 用户是否不具备某权限
+* 返回值：`boolean` 用户是否不具备某权限
 
 示例：
 
@@ -58,7 +62,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.lacksPermission('user:add') === true">用户不具有 user:add 权限</div>
@@ -77,11 +81,13 @@ export default defineComponent({
 
 
 ### **hasAnyPermission(permissionNames: string[])**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具有以下任意一个权限
 
 * 参数：permissionNames 权限列表
 
-* 返回值：boolean 用户是否具有以下任意一个权限
+* 返回值：`boolean` 用户是否具有以下任意一个权限
 
 示例：
 
@@ -97,7 +103,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasAnyPermission('user:add', 'user:edit') === true">用户具有 user:add 或 user:edit 权限</div>
@@ -116,11 +122,13 @@ export default defineComponent({
 
 
 ### **hasPermissionsAll(permissionNames: string[])**
+* 类型：`Function`
+
 * 功能描述：验证用户是否具有以下所有权限
 
 * 参数：permissionNames 权限列表
 
-* 返回值：boolean 用户是否具有以下所有权限
+* 返回值：`boolean` 用户是否具有以下所有权限
 
 示例：
 
@@ -136,7 +144,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
     <div v-if="shiro.hasPermissionsAll('user:add', 'user:edit') === true">用户具有 user:add 和 user:edit 权限</div>
