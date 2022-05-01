@@ -1,4 +1,4 @@
-#### **isAuthenticated()**
+### **isAuthenticated()**
 * 功能描述：验证是否为已认证通过的用户，即：shiro 实例创建创建时传入的 principal 是否不为 null，不包含已记住的用户，这是与 isUser 标签方法的区别所在
 
 * 参数：无
@@ -37,7 +37,7 @@ export default defineComponent({
 ```
 
 
-#### **isNotAuthenticated()**
+### **isNotAuthenticated()**
 * 功能描述：验证是否为未认证通过用户，即：shiro 实例创建创建时传入的 principal 是否为 null，与 isAuthenticated 相对应，与 isGuest 标签的区别是，该标签包含已记住用户
 
 * 参数：无
