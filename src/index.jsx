@@ -7,10 +7,12 @@ banner:
     - { name: 'Github >', href: 'https://github.com/buession/buession-shirojs' }
   caption: '当前版本: v1.1.1'
 features: 
-  - { name: '优雅', desc: '旨在提供便捷的、统一的、可靠的权限前端权限验证工具' }
-  - { name: '原生', desc: '参考 Apache Shiro 官方 JspTag API 设计，拥有和原生 JspTag 相同的 API，极大的减少学习成本' }
-  - { name: '简洁', desc: '与其它框架无耦合，min 版本 js 文件仅 512B' }
-  - { name: '开源', desc: '作为开源项目，我们拥有高质量的代码、完善的自动化测试流程，对社区的需求能够作出积极快速响应' }
+  - { name: '优雅', desc: '旨在提供便捷的、统一的、可靠的权限前端权限验证工具，拥有完善的文档和高可读性的源码' }
+  - { name: '易用', desc: '参考 Apache Shiro 官方 JspTag API 设计，拥有和原生 JspTag 相同的 API，极大的减少学习成本' }
+  - { name: '简洁', desc: '与其它框架无耦合，高内聚低耦合' }
+  - { name: '高效', desc: 'min 版本 js 文件仅 512B，加载速度快，代码简洁运行效率高' }
+  - { name: '兼容', desc: '支持 Node 和 Browser 运行环境，支持主流浏览器，支持原生 JS 和 ES' }
+  - { name: '开源', desc: '作为开源项目，我们拥有高质量的代码，对社区的需求能够作出积极快速响应' }
 
 footer:
   copyright:
