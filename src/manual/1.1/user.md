@@ -1,4 +1,4 @@
-#### **isUser()**
+### **isUser()**
 * 功能描述：验证用户是否认证通过或已记住的用户，即：shiro 实例创建创建时传入的 principal 是否不为 null
 
 * 参数：无
@@ -37,7 +37,7 @@ export default defineComponent({
 ```
 
 
-#### **isGuest()**
+### **isGuest()**
 * 功能描述：验证用户是否为访客，即未认证（包含未记住）的用户，即：shiro 实例创建创建时传入的 principal 是否为 null
 
 * 参数：无

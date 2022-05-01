@@ -1,4 +1,4 @@
-#### **hasRole(roleName: string)**
+### **hasRole(roleName: string)**
 * 功能描述：验证用户是否具备某角色
 
 * 参数：roleName 角色名称
@@ -37,7 +37,7 @@ export default defineComponent({
 ```
 
 
-#### **lacksRole(roleName: string)**
+### **lacksRole(roleName: string)**
 * 功能描述：验证用户是否不具备某角色，与 hasRole 逻辑相反
 
 * 参数：roleName 角色名称
@@ -76,7 +76,7 @@ export default defineComponent({
 ```
 
 
-#### **hasAnyRole(roleNames: string[])**
+### **hasAnyRole(roleNames: string[])**
 * 功能描述：验证用户是否具有以下任意一个角色
 
 * 参数：roleNames 角色列表
@@ -115,7 +115,7 @@ export default defineComponent({
 ```
 
 
-#### **hasRolesAll(roleNames: string[])**
+### **hasRolesAll(roleNames: string[])**
 * 功能描述：验证用户是否具有以下所有角色
 
 * 参数：roleNames 角色列表

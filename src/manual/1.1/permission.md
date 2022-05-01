@@ -1,4 +1,4 @@
-#### **hasPermission(permissionName: string)**
+### **hasPermission(permissionName: string)**
 * 功能描述：验证用户是否具备某权限
 
 * 参数：permissionName 权限名称
@@ -37,7 +37,7 @@ export default defineComponent({
 ```
 
 
-#### **lacksPermission(permissionName: string)**
+### **lacksPermission(permissionName: string)**
 * 功能描述：验证用户是否不具备某权限，与 hasPermission 逻辑相反
 
 * 参数：permissionName 权限名称
@@ -76,7 +76,7 @@ export default defineComponent({
 ```
 
 
-#### **hasAnyPermission(permissionNames: string[])**
+### **hasAnyPermission(permissionNames: string[])**
 * 功能描述：验证用户是否具有以下任意一个权限
 
 * 参数：permissionNames 权限列表
@@ -115,7 +115,7 @@ export default defineComponent({
 ```
 
 
-#### **hasPermissionsAll(permissionNames: string[])**
+### **hasPermissionsAll(permissionNames: string[])**
 * 功能描述：验证用户是否具有以下所有权限
 
 * 参数：permissionNames 权限列表
