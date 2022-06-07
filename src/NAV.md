@@ -1,5 +1,5 @@
 # YDoc
-![logo](images/logo.png)
+![logo](ydoc/images/logo.png)
 
 * [主页](https://shirojs.buession.com/)
 * [文档](/docs/quickstart.md)
