@@ -14,9 +14,9 @@
 
 vue
 在 main.js 中实例化 Shiro 类，并挂载到 Vue 全局中
-```vue
+```typescript
 <script type="ts">
-	import '@buession/shiro';
+  import '@buession/shiro';
 
   const principal = new Principal() | null;
   const shiro = new Shiro(principal);
