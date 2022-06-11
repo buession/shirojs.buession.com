@@ -7,8 +7,8 @@
 
 |  方法                                                        | 描述                    |
 |  ----                                                        | ----                   |
-| [isAuthenticated](authenticated.html#isAuthenticated)        | 验证是否为已认证通过的用户 |
-| [isNotAuthenticated](authenticated.html#isNotAuthenticated)  | 验证是否为未认证通过用户   |
+| [isAuthenticated](authenticated.html#认证-api-isauthenticated)        | 验证是否为已认证通过的用户 |
+| [isNotAuthenticated](authenticated.html#认证-api-isnotauthenticated)  | 验证是否为未认证通过用户   |
 
 
 ---

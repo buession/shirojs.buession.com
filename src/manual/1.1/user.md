@@ -7,8 +7,8 @@
 
 |  方法                          | 描述                          |
 |  ----                         | ----                          |
-| [isUser](user.html#isUser)    | 验证用户是否认证通过或已记住的用户 |
-| [isGuest](user.html#isGuest)  | 验证用户是否为访客               |
+| [isUser](user.html#用户-api-isuser)    | 验证用户是否认证通过或已记住的用户 |
+| [isGuest](user.html#用户-api-isguest)  | 验证用户是否为访客               |
 
 
 ---

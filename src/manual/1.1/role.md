@@ -5,12 +5,12 @@
 
 ### 方法
 
-|  方法                                  | 描述                          |
-|  ----                                 | ----                          |
-| [hasRole](role.html#hasRole)          | 验证用户是否具备某角色           |
-| [lacksRole](role.html#lacksRole)      | 验证用户是否不具备某角色          |
-| [hasAnyRole](role.html#hasAnyRole)    | 验证用户是否具有以下任意一个角色   |
-| [hasRolesAll](role.html#hasRolesAll)  | 验证用户是否具有以下所有角色      |
+|  方法                                                    | 描述                          |
+|  ----                                                   | ----                          |
+| [hasRole](role.html#角色-api-hasrolerolename-string)             | 验证用户是否具备某角色           |
+| [lacksRole](role.html#角色-api-acksrolerolename-string)          | 验证用户是否不具备某角色         |
+| [hasAnyRole](role.html#角色-api-hasanyrolerolenames-string[])    | 验证用户是否具有以下任意一个角色  |
+| [hasRolesAll](role.html#角色-api-hasrolesallrolenames-string[])  | 验证用户是否具有以下所有角色      |
 
 
 ---
