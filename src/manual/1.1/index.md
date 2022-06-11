@@ -14,7 +14,7 @@
 
 vue
 在 main.js 中实例化 Shiro 类，并挂载到 Vue 全局中
-```typescript
+```javascript
 <script type="ts">
   import '@buession/shiro';
 

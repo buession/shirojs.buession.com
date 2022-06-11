@@ -1,7 +1,7 @@
 ### API
 
 
-Buession ShiroJS API 包含以下目录：
+Buession ShiroJS API 包含以下目录，包含了完整的参考文档：
 
 
 #### [认证 API](authenticated.md)
