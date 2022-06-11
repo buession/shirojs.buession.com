@@ -11,7 +11,7 @@
 | [isNotAuthenticated](authenticated.html#isNotAuthenticated)  | 验证是否为未认证通过用户   |
 
 
-------
+---
 
 ### **isAuthenticated()**
 * 类型：`Function`
