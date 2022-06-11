@@ -1,3 +1,20 @@
+## 权限 API
+
+用户权限判断
+
+
+### 方法
+
+|  方法                                                   | 描述                          |
+|  ----                                                   | ----                         |
+| [hasPermission](permission.html#hasPermission)          | 验证用户是否具备某权限          |
+| [lacksPermission](permission.html#lacksPermission)      | 验证用户是否不具备某权限         |
+| [hasAnyPermission](permission.html#hasAnyPermission)    | 验证用户是否具有以下任意一个权限  |
+| [hasPermissionsAll](permission.html#hasPermissionsAll)  | 验证用户是否具有以下所有权限     |
+
+
+---
+
 ### **hasPermission(permissionName: string)**
 * 类型：`Function`
 
