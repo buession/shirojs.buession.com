@@ -1,3 +1,6 @@
+# 安装及使用
+
+
 ### 版本
 
 * 稳定版 <a href="https://www.npmjs.com/package/@buession/shiro" target="_blank"><img src="https://img.shields.io/npm/v/@buession/shiro" alt="Version" /></a>

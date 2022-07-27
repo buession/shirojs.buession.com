@@ -1,4 +1,5 @@
-### 初始化 Shiro
+# 初始化 Shiro
+
 
 使用 Buession ShiroJs 必须先对其初始化，创建 Shiro 类实例。在实例化 Shiro 类 之前，需定义 [Principal](./principal.html)
 

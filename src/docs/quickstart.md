@@ -1,4 +1,6 @@
-### 快速入门
+# 快速入门
+
+
 > **TIP**
 >> 官方指南假设您已了解"权限"方面的相关知识，关于 HTML 和 JavaScript 的初级知识。如果您使用 npm 包，那么您需要具备掌握 npm 的基础知识，否则这不是您使用 Buession ShiroJs 的最佳方式；此种情况下，将建议您使用 script 标签引入 Buession ShiroJs 的文件。
 

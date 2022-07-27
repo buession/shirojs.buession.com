@@ -1,4 +1,6 @@
-### 初始化 Principal
+# 初始化 Principal
+
+
 > 什么是 Principal ？
 >> Principal 即身份，标识了当前用户的身份属性，如：用户 ID、用户名、用户角色等等。
 

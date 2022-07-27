@@ -1,14 +1,15 @@
-## 认证 API
+# 认证 API
+
 
 认证 API 用于检测用户是否进行了认证（即：用户是否登录）
 
 
 ### 方法
 
-|  方法                                                        | 描述                    |
-|  ----                                                        | ----                   |
-| [isAuthenticated](authenticated.html#认证-api-isauthenticated)        | 验证是否为已认证通过的用户 |
-| [isNotAuthenticated](authenticated.html#认证-api-isnotauthenticated)  | 验证是否为未认证通过用户   |
+|  方法                                                                 | 描述                    |
+|  ----                                                                | ----                    |
+| [isAuthenticated](authenticated.html#认证-api-isauthenticated)        | 验证是否为已认证通过的用户  |
+| [isNotAuthenticated](authenticated.html#认证-api-isnotauthenticated)  | 验证是否为未认证通过用户    |
 
 
 ---

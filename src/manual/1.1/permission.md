@@ -1,16 +1,17 @@
-## 权限 API
+# 权限 API
+
 
 用户权限判断
 
 
 ### 方法
 
-|  方法                                                   | 描述                          |
-|  ----                                                   | ----                         |
-| [hasPermission](permission.html#权限-api-haspermissionpermissionname-string)          | 验证用户是否具备某权限          |
-| [lacksPermission](permission.html#权限-api-lackspermissionpermissionname-string)      | 验证用户是否不具备某权限         |
-| [hasAnyPermission](permission.html#权限-api-hasanypermissionpermissionnames-string[])    | 验证用户是否具有以下任意一个权限  |
-| [hasPermissionsAll](permission.html#权限-api-haspermissionsallpermissionnames-string[])  | 验证用户是否具有以下所有权限     |
+|  方法                                                                                    | 描述                          |
+|  ----                                                                                   | ----                          |
+| [hasPermission](permission.html#权限-api-haspermissionpermissionname-string)             | 验证用户是否具备某权限           |
+| [lacksPermission](permission.html#权限-api-lackspermissionpermissionname-string)         | 验证用户是否不具备某权限         |
+| [hasAnyPermission](permission.html#权限-api-hasanypermissionpermissionnames-string[])    | 验证用户是否具有以下任意一个权限   |
+| [hasPermissionsAll](permission.html#权限-api-haspermissionsallpermissionnames-string[])  | 验证用户是否具有以下所有权限      |
 
 
 ---
