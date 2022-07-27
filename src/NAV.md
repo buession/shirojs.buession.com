@@ -6,7 +6,7 @@
 * [参考手册](/manual/index.md)
 * [技术支持](/support.html)
 ## 生态
-  * [Buession Framework](https://wwww.buession.com/)
+  * [Buession Framework](https://www.buession.com/)
   * [Buession Security](https://security.buession.com/)
   * [Buession SpringBoot](https://springboot.buession.com/)
   * [Buession SpringCloud](https://springcloud.buession.com/)
