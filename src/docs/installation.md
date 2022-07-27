@@ -1,11 +1,7 @@
 # 安装及使用
 
 
-### 版本
-
-* 稳定版 <a href="https://www.npmjs.com/package/@buession/shiro" target="_blank"><img src="https://img.shields.io/npm/v/@buession/shiro" alt="Version" /></a>
-
-您可以通过 [NPM](https://www.npmjs.com/)、[YARN](https://yarnpkg.com/) 或者通过 `<script>` 的方式引入 [unpkg.com](https://unpkg.com/) 上的包。
+您可以通过 [NPM](https://www.npmjs.com/)、[YARN](https://yarnpkg.com/) 或者通过 `<script>` 的方式引入 [unpkg.com](https://unpkg.com/) 上的包；稳定版 <a href="https://www.npmjs.com/package/@buession/shiro" target="_blank"><img src="https://img.shields.io/npm/v/@buession/shiro" alt="Version" /></a>。
 
 
 ### NPM
