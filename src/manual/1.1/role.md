@@ -6,11 +6,11 @@
 
 ### 方法
 
-|  方法                                                    | 描述                          |
-|  ----                                                   | ----                          |
+|  方法                                                            | 描述                          |
+|  ----                                                           | ----                          |
 | [hasRole](role.html#角色-api-hasrolerolename-string)             | 验证用户是否具备某角色           |
 | [lacksRole](role.html#角色-api-acksrolerolename-string)          | 验证用户是否不具备某角色         |
-| [hasAnyRole](role.html#角色-api-hasanyrolerolenames-string[])    | 验证用户是否具有以下任意一个角色  |
+| [hasAnyRole](role.html#角色-api-hasanyrolerolenames-string[])    | 验证用户是否具有以下任意一个角色   |
 | [hasRolesAll](role.html#角色-api-hasrolesallrolenames-string[])  | 验证用户是否具有以下所有角色      |
 
 
