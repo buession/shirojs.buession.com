@@ -5,7 +5,7 @@ banner:
   btns: 
     - { name: '开 始', href: '/docs/quickstart.html', primary: true }
     - { name: 'Github >', href: 'https://github.com/buession/buession-shirojs' }
-  caption: '当前版本: v1.1.1'
+  caption: '当前版本: v1.1.2'
 features: 
   - { name: '优雅', desc: '旨在提供便捷的、统一的、可靠的权限前端权限验证工具，拥有完善的文档和高可读性的源码' }
   - { name: '易用', desc: '参考 Apache Shiro 官方 JspTag API 设计，拥有和原生 JspTag 相同的 API，极大的减少学习成本' }
