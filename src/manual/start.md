@@ -13,6 +13,18 @@
 </script>
 ```
 
+或
+
+```javascript
+<script type="text/javascript">
+  var shiro = new Shiro({
+    id: 'id',
+    roles: [],
+    permissions: []
+  });
+</script>
+```
+
 vue
 在 main.js 中实例化 Shiro 类，并挂载到 Vue 全局中
 ```javascript
@@ -21,6 +33,21 @@ vue
 
   const principal = new Principal() | null;
   const shiro = new Shiro(principal);
+  app.config.globalProperties.shiro = shiro;
+</script>
+```
+
+或
+
+```javascript
+<script type="ts">
+  import '@buession/shiro';
+
+  const shiro = new Shiro({
+    id: 'id',
+    roles: [],
+    permissions: []
+  });
   app.config.globalProperties.shiro = shiro;
 </script>
 ```
