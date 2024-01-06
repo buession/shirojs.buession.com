@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="UTF-8"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><link rel="apple-touch-icon" sizes="180x180" href="../ydoc/images/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="../ydoc/images/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="../ydoc/images/favicon-16x16.png"/><link rel="manifest" href="../ydoc/images/manifest.json"/><link rel="mask-icon" href="../ydoc/images/safari-pinned-tab.svg" color="#5bbad5"/><meta name="theme-color" content="#ffffff"/><meta http-equiv="Cache-Control" content="no-transform"/><meta http-equiv="Cache-Control" content="no-siteapp"/><title>角色 API-参考手册</title><link rel="stylesheet" href="../ydoc/styles/style.css"/><meta name="author" content="buession"/><meta name="keywords" content="buession JavaScript TypeScript Security authentication authorization permission shiro privilege"/><meta name="description" content="A security framework for JavaScript or TypeScript. "/><meta id="releativePath" content=".."/><link rel="stylesheet" href="../ydoc/ydoc-plugin-search/search.css"/></head><body><div class="g-doc"><div class="m-aside"><div class="m-summary" id="js-menu"><div class="m-summary-content" id="js-menu-content"><div class="m-summary-block"><ul class="m-summary-list"><li class="item"><a href="index.html" class="href">简介</a></li><li class="item"><div class="m-summary-block"><a href="overview.html" class="href">参考指南</a><ul class="m-summary-list indent"><li class="item"><a href="start.html" class="href">初始化 Shiro</a></li><li class="item"><a href="principal.html" class="href">初始化 Principal</a></li><li class="item"><div class="m-summary-block"><a href="reference.html" class="href">方法参考</a><ul class="m-summary-list indent"><li class="item"><div class="m-summary-block"><a href="authenticated.html" class="href">认证 API</a><ul class="m-summary-list indent"><li class="item"><a href="authenticated.html#%e8%ae%a4%e8%af%81-api-isauthenticated" class="href">isAuthenticated</a></li><li class="item"><a href="authenticated.html#%e8%ae%a4%e8%af%81-api-isnotauthenticated" class="href">isNotAuthenticated</a></li></ul></div></li><li class="item"><div class="m-summary-block"><a href="user.html" class="href">用户 API</a><ul class="m-summary-list indent"><li class="item"><a href="user.html#%e7%94%a8%e6%88%b7-api-isuser" class="href">isUser</a></li><li class="item"><a href="user.html#%e7%94%a8%e6%88%b7-api-isguest" class="href">isGuest</a></li></ul></div></li><li class="item"><div class="m-summary-block"><a href="" class="href">角色 API</a><ul class="m-summary-list indent"><li class="item"><a href="role.html#%e8%a7%92%e8%89%b2-api-hasrolerolename-string" class="href">hasRole</a></li><li class="item"><a href="role.html#%e8%a7%92%e8%89%b2-api-acksrolerolename-string" class="href">lacksRole</a></li><li class="item"><a href="role.html#%e8%a7%92%e8%89%b2-api-hasanyrolerolenames-string%5b%5d" class="href">hasAnyRole</a></li><li class="item"><a href="role.html#%e8%a7%92%e8%89%b2-api-hasrolesallrolenames-string%5b%5d" class="href">hasRolesAll</a></li></ul></div></li><li class="item"><div class="m-summary-block"><a href="permission.html" class="href">权限 API</a><ul class="m-summary-list indent"><li class="item"><a href="permission.html#%e6%9d%83%e9%99%90-api-haspermissionpermissionname-string" class="href">hasPermission</a></li><li class="item"><a href="permission.html#%e6%9d%83%e9%99%90-api-lackspermissionpermissionname-string" class="href">lacksPermission</a></li><li class="item"><a href="permission.html#%e6%9d%83%e9%99%90-api-hasanypermissionpermissionnames-string%5b%5d" class="href">hasAnyPermission</a></li><li class="item"><a href="permission.html#%e6%9d%83%e9%99%90-api-haspermissionsallpermissionnames-string%5b%5d" class="href">hasPermissionsAll</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></div></div><div class="m-summary-switch" id="js-summary-switch"><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="bottom"><g transform="translate(904.92214,-879.1482)"><path d="m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,-55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,-174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,-174.68583 0.6895,0 26.281,25.03215 56.8701,55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864-231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,-104.0616 -231.873,-231.248 z" fill="#fff"></path></g></svg><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="top"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="aaa" fill="#fff" fill-rule="nonzero"><path d="M231.2455,342.502 L0,111.25397 L55.6165,55.62697 C86.2056,25.03212 111.7971,-2.99999998e-05 112.4866,-2.99999998e-05 C113.176,-2.99999998e-05 192.3503,78.60859 288.4293,174.6858 L463.1185,349.3716 L637.8077,174.6858 C733.8867,78.60859 813.060896,-2.99999997e-05 813.750396,-2.99999997e-05 C814.439896,-2.99999997e-05 840.031396,25.03212 870.620496,55.62697 L926.236996,111.25397 L694.9915,342.502 C567.8065,469.6884 463.4636,573.75 463.1185,573.75 C462.7734,573.75 358.4305,469.6884 231.2455,342.502 Z" id="Shape" transform="translate(463.118498, 286.874985) scale(1, -1) translate(-463.118498, -286.874985) "></path></g></g></svg></div></div><div class="m-main" id="js-panel"><header class="m-header" id="js-header"><div class="m-header-title js-logo"><a href="../index.html" target="_self"><img class="logo" width="70" src="../ydoc/images/logo.png"/></a></div><div><div class="m-search">
+      <div class="icon">&#xf0fd;</div>
+      <input type="text" class="input js-input" placeholder="搜索" />
+      <div class="m-search-result js-search-result"></div>
+    </div></div><nav class="m-header-nav js-nav"><ul class="m-header-items"><li class="item "><a class="href" href="https://shirojs.buession.com/">主页</a></li><li class="item "><a class="href" href="../docs/quickstart.html">文档</a></li><li class="item active"><a class="href" href="index.html">参考手册</a></li><li class="item "><a class="href" href="../support.html">技术支持</a></li><li class="item "><span class="href">生态</span><ul class="m-header-subtitle"><li class="item"><a href="https://www.buession.com/" class="link">Buession Framework</a></li><li class="item"><a href="https://security.buession.com/" class="link">Buession Security</a></li><li class="item"><a href="https://logging.buession.com/" class="link">Buession Logging</a></li><li class="item"><a href="https://canal.buession.com/" class="link">Buession Canal</a></li><li class="item"><a href="https://springboot.buession.com/" class="link">Buession SpringBoot</a></li><li class="item"><a href="https://springcloud.buession.com/" class="link">Buession SpringCloud</a></li><li class="item"><a href="https://cas.buession.com/" class="link">Buession Cas</a></li><li class="item"><a href="https://prototype.buession.com/" class="link">Buession Prototype</a></li><li class="item"><a href="https://shirojs.buession.com/" class="link">Buession Shirojs</a></li></ul></li></ul></nav><div id="js-nav-btn" class="m-header-btn ui-font-ydoc"></div></header><div class="m-content" id="js-content"><div id="markdown-body" class="m-content-container markdown-body"><h1>角色 API</h1>
+<p>用户角色判断</p>
+<h3 id="方法">方法</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="role.html#%E8%A7%92%E8%89%B2-api-hasrolerolename-string">hasRole</a></td>
+<td>验证用户是否具备某角色</td>
+</tr>
+<tr>
+<td><a href="role.html#%E8%A7%92%E8%89%B2-api-acksrolerolename-string">lacksRole</a></td>
+<td>验证用户是否不具备某角色</td>
+</tr>
+<tr>
+<td><a href="role.html#%E8%A7%92%E8%89%B2-api-hasanyrolerolenames-string%5B%5D">hasAnyRole</a></td>
+<td>验证用户是否具有以下任意一个角色</td>
+</tr>
+<tr>
+<td><a href="role.html#%E8%A7%92%E8%89%B2-api-hasrolesallrolenames-string%5B%5D">hasRolesAll</a></td>
+<td>验证用户是否具有以下所有角色</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="hasrolerolename-string"><strong>hasRole(roleName: string)</strong></h3>
+<ul>
+<li>
+<p>类型：<code>Function</code></p>
+</li>
+<li>
+<p>功能描述：验证用户是否具备某角色</p>
+</li>
+<li>
+<p>参数：roleName 角色名称</p>
+</li>
+<li>
+<p>返回值：<code>boolean</code> 用户是否具备某角色</p>
+</li>
+</ul>
+<p>示例：</p>
+<p>原生 JavaScript</p>
+<pre><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>shiro<span class="token punctuation">.</span><span class="token function">hasRole</span><span class="token punctuation">(</span><span class="token string">'admin'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户具有 admin 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户不具有 admin 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code></pre>
+<p>vue</p>
+<pre><code class="language-html"><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasRole('admin') === true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户具有 admin 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasRole('admin') === false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户不具有 admin 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></span>
+
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+  }
+});
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+</code></pre>
+<h3 id="lacksrolerolename-string"><strong>lacksRole(roleName: string)</strong></h3>
+<ul>
+<li>
+<p>类型：<code>Function</code></p>
+</li>
+<li>
+<p>功能描述：验证用户是否不具备某角色，与 hasRole 逻辑相反</p>
+</li>
+<li>
+<p>参数：roleName 角色名称</p>
+</li>
+<li>
+<p>返回值：<code>boolean</code> 用户是否不具备某角色</p>
+</li>
+</ul>
+<p>示例：</p>
+<p>原生 JavaScript</p>
+<pre><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>shiro<span class="token punctuation">.</span><span class="token function">lacksRole</span><span class="token punctuation">(</span><span class="token string">'admin'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户不具有 admin 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户具有 admin 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code></pre>
+<p>vue</p>
+<pre><code class="language-html"><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.lacksRole('admin') === true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户不具有 admin 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.lacksRole('admin') === false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户具有 admin 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></span>
+
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+  }
+});
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+</code></pre>
+<h3 id="hasanyrolerolenames-string[]"><strong>hasAnyRole(roleNames: string[])</strong></h3>
+<ul>
+<li>
+<p>类型：<code>Function</code></p>
+</li>
+<li>
+<p>功能描述：验证用户是否具有以下任意一个角色</p>
+</li>
+<li>
+<p>参数：roleNames 角色列表</p>
+</li>
+<li>
+<p>返回值：<code>boolean</code> 用户是否具有以下任意一个角色</p>
+</li>
+</ul>
+<p>示例：</p>
+<p>原生 JavaScript</p>
+<pre><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>shiro<span class="token punctuation">.</span><span class="token function">hasAnyRole</span><span class="token punctuation">(</span><span class="token string">'admin'</span><span class="token punctuation">,</span> <span class="token string">'seller'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户具有 admin 或 seller 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户不具有 admin 和 seller 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code></pre>
+<p>vue</p>
+<pre><code class="language-html"><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasAnyRole('admin', 'seller') === true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户具有 admin 或 seller 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasAnyRole('admin', 'seller') === false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户不具有 admin 和 seller 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></span>
+
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+  }
+});
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+</code></pre>
+<h3 id="hasrolesallrolenames-string[]"><strong>hasRolesAll(roleNames: string[])</strong></h3>
+<ul>
+<li>
+<p>类型：<code>Function</code></p>
+</li>
+<li>
+<p>功能描述：验证用户是否具有以下所有角色</p>
+</li>
+<li>
+<p>参数：roleNames 角色列表</p>
+</li>
+<li>
+<p>返回值：<code>boolean</code> 用户是否具有以下所有角色</p>
+</li>
+</ul>
+<p>示例：</p>
+<p>原生 JavaScript</p>
+<pre><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>shiro<span class="token punctuation">.</span><span class="token function">hasRolesAll</span><span class="token punctuation">(</span><span class="token string">'admin'</span><span class="token punctuation">,</span> <span class="token string">'seller'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户具有 admin 和 seller 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"用户不具有 admin 或 seller 角色"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code></pre>
+<p>vue</p>
+<pre><code class="language-html"><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasRolesAll('admin', 'seller') === true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户具有 admin 和 seller 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shiro.hasRolesAll('admin', 'seller') === false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>用户不具有 admin 或 seller 角色<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+  <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></span>
+
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+  }
+});
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+</code></pre>
+</div><div class="m-content-container m-paging"><div class="m-paging-prev m-paging-item"><a href="user.html" class="href"><span class="ui-font-ydoc"></span>用户 API</a></div><div class="m-paging-next m-paging-item"><a href="permission.html" class="href">权限 API<span class="ui-font-ydoc"></span></a></div></div></div></div></div><div></div><script>
+    var $content = document.getElementById('js-content');
+    var $summaryItems = Array.prototype.slice.call(document.querySelectorAll('#js-menu .href'));
+    var $menu = document.getElementById('js-menu');
+    if ($menu && sessionStorage.menuScrollTop) {
+		$menu.scrollTop = sessionStorage.menuScrollTop;
+    }
+    // 刷新页面但不切换 pathname 的时候，内容区恢复到记忆的高度
+    if ($content && sessionStorage.contentScrollTop && window.location.pathname == sessionStorage.locationPathname) {
+      $content.scrollTop = sessionStorage.contentScrollTop;
+    }
+    sessionStorage.setItem('locationPathname', window.location.pathname);</script><script src="../ydoc/scripts/plugins/dollar.min.js"></script><script src="../ydoc/scripts/plugins/responsive-nav.min.js"></script><script src="../ydoc/scripts/plugins/slideout.min.js"></script><script src="../ydoc/scripts/app.js"></script><script src="../ydoc/ydoc-plugin-search/core.js"></script><script src="../ydoc/ydoc-plugin-search/search.js"></script><script src="../../../../../../../js/stat.js"></script><script src="../search_json.js"></script></body></html>
